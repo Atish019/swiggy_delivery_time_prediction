@@ -1,3 +1,25 @@
 Data_Preparation:
   test_size: 0.2
   random_state: 42
+
+Train:
+  Random_Forest:
+    n_estimators: 390
+    criterion: 'squared_error'
+    max_depth: 13
+    max_features: 1
+    min_samples_split: 4
+    min_samples_leaf: 1
+    max_samples: 0.5364461302640064
+    verbose: 1
+    n_jobs: -1
+  
+  LightGBM:
+    n_estimators: 126
+    max_depth: 32
+    learning_rate: 0.15993477023872307
+    subsample: 0.6856605986492736
+    min_child_weight: 5
+    min_split_gain: 0.04873620236032
+    reg_lambda: 11.69585496098843
+    n_jobs: -1
